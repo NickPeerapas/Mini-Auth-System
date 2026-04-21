@@ -11,7 +11,7 @@ body{
     margin: 0;
     background-color: var(--bg);
 }
-.login-card{
+.login-card,.register-card{
     background-color: var(--card);
     padding: 20px;
     border-radius: 10px;
@@ -31,6 +31,12 @@ form{
 
 h1{
     color: var(--text);
+    margin: 10px;
+}
+
+h2{
+    color: var(--subtext);
+    margin: 10px;
 }
 
 input{
