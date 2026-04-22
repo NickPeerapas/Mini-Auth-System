@@ -7,17 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="register-card">
+    <div class="register-container">
+        <div class="register-card">
         <h1 class="register-title">Mini-Auth-System</h1>
-        <h2>Create Account</h2>
-        <form action="" method="post">
-            <input type="text" name="username" id="register" placeholder="username">
-            <input type="email" name="email" id="register-email" placeholder="gmail">
-            <input type="password" name="password" id="register-password" placeholder="password">
-            <button id="login-submit" class="submit-button">Register</button>
-        </form>
-        <p id="register-error-message" class="error-message">hello</p>
-        <a href="login.html">Login</a>
+            <h2>Create Account</h2>
+            <form action="" method="post">
+                <input type="text" name="username" id="register" placeholder="username">
+                <input type="email" name="email" id="register-email" placeholder="gmail">
+                <input type="password" name="password" id="register-password" placeholder="password">
+                <input type="password" name="password" id="register-confirmpassword" placeholder="confirm password">
+                <button id="login-submit" class="submit-button">Register</button>
+            </form>
+            <p id="register-error-message" class="error-message">hello</p>
+            <a href="login.html">Login</a>
+        </div>
+    <script src="register.js"></script>
     </div>
 </body>
 </html>
