@@ -2,8 +2,6 @@ const email = document.getElementById("login-email")
 const password = document.getElementById("login-password")
 const form= document.getElementById("login-form")
 const error_message = document.getElementById("login-error-message")
-mydata = {"peerapasi87@gmail.com":{"password":"12345678"}}
-localStorage.setItem("users",JSON.stringify(mydata))
 
 form.addEventListener("submit",(event)=>{
     event.preventDefault()
