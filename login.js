@@ -53,5 +53,7 @@ function login(){
 
     if(!invalid){
         error_message.classList.remove("wrong")
+        localStorage.setItem("currentuser",myemail)
+        window.location.href = "dashboard.html"
     }
 }
