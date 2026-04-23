@@ -57,23 +57,25 @@ form.addEventListener("submit",(event)=>{
         return
     }
 
-    if(!invalid){
-        error_message.classList.remove("wrong")
-        error_message.classList.add("success")
-        error_message.textContent = "Registration Successful"
-    }
     let users = getusers()
     if(!users){
        users = {[email]:{username:username,password:password}}
     }
     else{
         if(users[email]){
+            invalid = true
             error_message.classList.add("wrong")
             error_message.textContent = "This email address has already been used"
             return
         }else{
             users[email] = {username:username,password:password}
         }
+    }
+
+    if(!invalid){
+        error_message.classList.remove("wrong")
+        error_message.classList.add("success")
+        error_message.textContent = "Registration Successful"
     }
     localStorage.setItem("users",JSON.stringify(users))
 })
